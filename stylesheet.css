@@ -1,0 +1,75 @@
+/* Nav */
+@media (min-width: 700px) {
+    .nav {  
+        display: block;
+        height: 60px;
+        width: 100%;
+        font-family:  "Dosis", sans-serif;
+        text-align: right;
+        position: fixed;
+        z-index: 4;
+        background-color:rgba(151, 147, 147, 0.582) ;
+    }
+    .nav li {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: 900;
+        color: black;
+        padding-top: 15px;
+    }
+    .nav li a {
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+        padding-top: 15px;
+    }
+    .nav li a:hover {
+       text-decoration: none;
+       padding-left: 10px;
+       padding-right: 10px;
+       padding-bottom: 7px;
+       color: black;
+       padding-top: 15px;
+       border-bottom: solid black 1px;
+   }
+   .hamburgerIcon {
+       display: none;
+}
+}
+@media (max-width: 699px) {
+    .nav {
+       display: none;
+    }
+    .hamburgerIcon {
+        display: flex;
+        position: fixed;
+        top: 3px;
+        right: 12px;
+        color: black;
+        user-select: none;
+        z-index: 5;
+    }
+    .navGeoeffnet {
+       display: block;
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       z-index: 4;
+       padding-top: 2.8em;
+       background-color:rgba(151, 147, 147, 0.96);
+    }
+    .navGeoeffnet li {
+       display: block;
+       height: 100%;
+       text-align: center;
+       font-size: 1.6rem;
+       font-weight: 900;
+       padding: 10px;
+   }
+   .navGeoeffnet li a {
+       text-decoration: none;
+       color: white;
+   }
+
+}
