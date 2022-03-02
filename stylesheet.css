@@ -1,3 +1,31 @@
+/*** Allgemein ***/
+* {
+    margin:0;
+   padding:0;
+ }
+ html {
+        scroll-behavior: smooth;
+        font-size: 100%;
+ }
+ h2, h3, p, a, li {
+        font-family: 'Dosis', sans-serif;
+        padding: 10px;
+ }
+ p {
+    font-size: 16px;
+ }
+ h1 {
+     text-align: center;
+     font-family: "Dosis", sans-serif;
+     color: black;
+     padding: 100px 40px 80px 40px;
+ }
+ a:link {
+     text-decoration: none;
+ }
+ a:after {
+     text-decoration: none;
+ }
 /* Nav */
 @media (min-width: 700px) {
     .nav {  
@@ -32,10 +60,10 @@
        color: black;
        padding-top: 15px;
        border-bottom: solid black 1px;
-   }
+    }
    .hamburgerIcon {
        display: none;
-}
+    }
 }
 @media (max-width: 699px) {
     .nav {
@@ -73,3 +101,226 @@
    }
 
 }
+
+/* Start */
+    .start {
+        background-image: url(pics/innenquerschmal.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        margin: none;    
+    }
+    .start h1 {
+        padding-top: 35vh;
+        padding-bottom: 10px;
+        font-size: 3em;
+    }
+    .start h2 {
+        text-align: center;
+        letter-spacing: 1px;
+        color: black;
+    }
+   @media (min-width: 800px) {
+       .icons {
+           background-color: rgb(194, 192, 192);
+           width: 100%;
+           position: absolute;
+           bottom: 0;
+           padding-top: 1.3em;
+           padding-right: 1.5em;
+           padding-bottom: 1.3em;
+           text-align: right;
+           opacity: 0.8;
+       }
+       .icons div {
+          font-family: 'Dosis', sans-serif;
+          display: inline-block;
+          padding: 10px;
+       }
+       .icons > div > i {
+           font-size: 1.7em;
+       }
+   }
+   @media (max-width: 799px) {
+       .icons {
+           background-color: rgb(194, 192, 192);
+           width: 100%;
+           position: absolute;
+           bottom: 0;
+           padding-top: 1.3em;
+           padding-right: 1.5em;
+           padding-bottom: 1.3em;
+           text-align: center;
+           opacity: 0.8;
+       }
+       .icons div {
+          font-family: 'Dosis', sans-serif;
+          font-size: 1em;
+          display: inline-block;
+          padding: 10px;
+       }
+       .icons i {
+           padding: 10px;
+           font-size: 1em;
+       }
+   }
+
+    /* Übersicht */
+ @media (min-width: 700px) {
+    .menu {
+       height: 100vh;
+       display: flex;
+       width: 100%;
+       justify-content: space-around;
+       position: absolute;
+       z-index: 3;
+    }
+   
+    .rundeFotos1 > a {
+       width: 25vw;
+       text-align: center;
+       height: 20em;
+       top: 40%;
+    }
+    .vierBilder {
+       height: 12px;
+       width: 6em;
+       opacity:0;
+       z-index: 1;
+       position: absolute;
+       top: 40%;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+    }
+    .rundeFotos1 > a > div > h3 {
+        font-size: 2em;
+        color: black;
+        padding-top: 3em;
+    }
+    .rundeFotos1 > a > div > p {
+        color:black;
+    }
+    
+   .active {
+       height: 12em;
+       width: 6em;
+       opacity:1;
+       object-fit: cover;
+       z-index: 1;
+       position: absolute;
+       top: 40%;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+       border-radius:7px;
+   
+       /*fade-slide */
+       --menufontsize: calc(1.6rem + .3vw);
+       --black: #000000;
+       --copyfontsize: calc(1.2rem + .25vw);
+       --menufooterfontsize: 3.6vw;
+       --cePad: 10vh 0;
+       text-rendering: optimizeLegibility;
+       -webkit-font-smoothing: antialiased;
+       pointer-events: all;
+       word-break: break-word;
+       hyphens: auto;
+       text-align: center;
+       box-sizing: inherit;
+       background-repeat: no-repeat;
+       margin: 0;
+       padding: 0;
+       vertical-align: baseline;
+       border: 0;
+       background-color: transparent;
+       background-size: cover;
+       background-position: center center;
+       position: absolute;
+       z-index: -1;
+       transition: all .5s;
+       opacity: .6;
+   }
+   
+   .kasten1 {
+       z-index: 2;
+       padding:40px;
+       top:40%;
+       height: 12em;
+       position: relative;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+   }
+   .kasten2 {
+    z-index: 2;
+    padding:40px;
+    top:40%;
+    height: 12em;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.kasten3 {
+    z-index: 2;
+    padding:40px;
+    top:40%;
+    height: 12em;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.kasten4 {
+    z-index: 2;
+    padding:40px;
+    top:40%;
+    height: 12em;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+   
+   .background {
+       position: relative;
+       height: 100vh;
+       width: 100vw;
+       background-color: rgb(194, 192, 192);
+       z-index: 1;
+   
+   }
+   .background > p {
+       font-size: 34vw;
+       letter-spacing: 50px;
+       font-weight: 900;
+       text-align: center;
+       font-family: 'Dosis', sans-serif;
+       color: rgb(194, 192, 192);
+       text-shadow: 0 0 3px honeydew;
+       position: relative;
+       top: 50%;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+   }
+}
+   
+   @media (max-width: 699px) {
+       .menu {
+           height: 100vh;
+           display: none;
+           width: 100%;
+           position: none;
+    }
+    .background {
+        position: relative;
+        height: 200vh;
+        width: 100vw;
+        background-color: rgb(194, 192, 192);
+        z-index: 1;
+        display: none;
+    }
+}
+    
