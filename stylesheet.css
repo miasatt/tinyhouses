@@ -166,6 +166,9 @@
    }
 
     /* Übersicht */
+.uebersicht {
+    display: relative;
+}
  @media (min-width: 700px) {
     .menu {
        height: 100vh;
@@ -216,29 +219,11 @@
        border-radius:7px;
    
        /*fade-slide */
-       --menufontsize: calc(1.6rem + .3vw);
-       --black: #000000;
-       --copyfontsize: calc(1.2rem + .25vw);
-       --menufooterfontsize: 3.6vw;
-       --cePad: 10vh 0;
-       text-rendering: optimizeLegibility;
-       -webkit-font-smoothing: antialiased;
-       pointer-events: all;
-       word-break: break-word;
-       hyphens: auto;
        text-align: center;
        box-sizing: inherit;
-       background-repeat: no-repeat;
-       margin: 0;
-       padding: 0;
-       vertical-align: baseline;
-       border: 0;
-       background-color: transparent;
-       background-size: cover;
-       background-position: center center;
        position: absolute;
        z-index: -1;
-       transition: all .5s;
+       transition: all .6s;
        opacity: .6;
    }
    
@@ -312,15 +297,18 @@
            height: 100vh;
            display: none;
            width: 100%;
-           position: none;
     }
     .background {
         position: relative;
-        height: 200vh;
+        height: 100vh;
         width: 100vw;
         background-color: rgb(194, 192, 192);
         z-index: 1;
         display: none;
     }
 }
-    
+
+.test {
+    height: 100vh;
+    display: block;
+}
