@@ -3,8 +3,27 @@ function navigationUmschalten(){
     const navigationsleiste = document.getElementById("navbar");
     navigationsleiste.classList.toggle("navGeoeffnet");
 };
+//Bewegung Navigationselemente bei Mouseover
+let liMenu = document.querySelector("#liMenu");
 
-//menu
+liMenu.addEventListener("mouseover", mouseOverMenu);
+
+function mouseOverMenu () {
+    
+    //bewegung des Divs während sich die Maus bewegt
+}
+
+//Drehwurm
+window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("warped");
+    image.style.transform = "rotate(-" + window.pageYOffset/6 + "deg)";
+}
+
+//überblick
 let kasten1 = document.querySelector(".kasten1");
 let bild1 = document.querySelector("#bild1");
 
@@ -63,3 +82,10 @@ kasten4.addEventListener("mouseout", mouseOut4);
 function mouseOut4 () {
     bild4.className = "vierBilder";
 };
+
+// Preise - Accordion
+
+$(document).ready(function(){
+    $(".accordion-color").css("color", "green");
+
+});
