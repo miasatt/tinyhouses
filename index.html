@@ -3,13 +3,16 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
+
+     <!--Drehwurm-->
+     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Dosis:300:latin'>
+
 
     <!-- Google-Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,77 +28,43 @@
     <title>Tinyhouses</title>
   </head>
   <body>
-    <!-- Nav -->
-    <div class="startbild">
-        <div class="nav" id="navbar">
-            <ul class="nav1">
-                <li><a href="#menu" onclick="navigationUmschalten()">Home</a></li>
-                <li><a href="#galerie" onclick="navigationUmschalten()">Galerie</a></li>
-                <li><a href="#ausstattung" onclick="navigationUmschalten()">Ausstattung</a></li>
-                <li><a href="#preise" onclick="navigationUmschalten()">Preise</a></li>
-                <li><a href="#kalender" onclick="navigationUmschalten()">Kalender</a></li>
-                <li><a href="#umgebung" onclick="navigationUmschalten()">Umgebung</a></li>
-                <li><a href="#kontakt" onclick="navigationUmschalten()">Kontakt</a></li>
-            </ul>
+    <!-- Drehwurm -->
+    <div class="drehwurm">
+        <div id='warped'>
+               <span class='w0'>T</span><span class='w1'>I</span><span class='w2'>N</span><span class='w3'>Y</span><span class='w4'>H</span><span class='w5'>Ä</span><span class='w6'>U</span><span class='w7'>S</span><span class='w8'>E</span><span class='w9'>R</span><span class='w10'> </span><span class='w11'>·</span><span class='w12'> </span><span class='w13'>I</span><span class='w14'>N</span><span class='w15'> </span><span class='w16'>·</span><span class='w17'> </span><span class='w18'>L</span><span class='w19'>U</span><span class='w20'>B</span><span class='w21'>M</span><span class='w22'>I</span><span class='w23'>N</span><span class='w24'> </span><span class='w25'>·</span>
         </div>
-        <a href="javascript:void(0);" class="hamburgerIcon" onclick="navigationUmschalten()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </a>
+    </div>
+
+    <!-- Nav -->
+    <div class="nav" id="navbar">
+        <ul class="nav1">
+            <li id="liMenu"><a href="#menu" onclick="navigationUmschalten()">Home</a></li>
+            <li id="liGalerie"><a href="#galerie" onclick="navigationUmschalten()">Galerie</a></li>
+            <li><a href="#ausstattung" onclick="navigationUmschalten()">Ausstattung</a></li>
+            <li><a href="#preise" onclick="navigationUmschalten()">Preise</a></li>
+            <li><a href="#kalender" onclick="navigationUmschalten()">Kalender</a></li>
+            <li><a href="#umgebung" onclick="navigationUmschalten()">Umgebung</a></li>
+            <li><a href="#kontakt" onclick="navigationUmschalten()">Kontakt</a></li>
+        </ul>
+    </div>
+    <a href="javascript:void(0);" class="hamburgerIcon" onclick="navigationUmschalten()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </a>        
     
+
     <!-- Start-->
     <div id="home" class="start">
         <a href="#menu"><h1>TINYHÄUSER</h1>
-        <h2 backgroundcolor>Ferienvermietung in Lubmin</h2></a>
+        <h2>Ferienvermietung in Lubmin</h2></a>
         <div class="icons">
             <div><i class="fas fa-user-plus"></i><div>Bis zu vier Personen</div></div>
             <div><i class="fas fa-bed"></i><div>2 Schlafzimmer</div></div>
             <div><i class="fas fa-water"></i><div>Seeblick</div></div>
         </div>
     </div>
-
-    <!-- Übersicht -->
-    <div class="menu">
-        <div class="rundeFotos1">
-            <a href="#galerie">
-                <img id="bild1" class="vierBilder" src="pics/boddenblickBlaetter.jpeg">
-                <div class="kasten1">
-                    <h3>Galerie</h3>
-                    <p>Werfen Sie einen Blick in unsere Tiny-Houses</p>
-                </div>
-            </a>
-        </div>
-        <div class="rundeFotos1">
-            <a href=#ausstattung>
-                <img class="vierBilder" id="bild2" src="pics/greifswaldKarusell.jpg">
-                <div class="kasten2">
-                    <h3>Ausstattung</h3>
-                    <p>Wir haben alles vor Ort, was es für einen entspannten Urlaub braucht.</p>   
-                </div>
-            </a>
-        </div>
-        <div class="rundeFotos1">
-            <a href=#kalender>
-                <img class="vierBilder" id="bild3" src="pics/kalender.jpg">
-                <div class="kasten3">
-                    <h3>Kalender</h3>
-                    <p>Schauen Sie direkt nach, ob es noch freie Kapazitäten gibt.</p>   
-                </div>
-            </a>
-        </div>
-        <div class="rundeFotos1">
-            <a href=#kontakt>
-                <img class="vierBilder" id="bild4" src="pics/kontakt.jpg">
-                <div class="kasten4">
-                    <h3>Kontakt</h3>
-                    <p>Sie haben noch Fragen? Schreiben Sie uns eine E-Mail.</p>
-                </div>
-            </a>
-        </div>
-</div>
-<div id="menu" class="background"><p>TINY.</p></div>
-
+    
 <!--Bilder-Carousel-->
 <div class="bilder-carousel">
 <h1 id="galerie">Galerie</h1>
@@ -138,18 +107,201 @@
     </a>
   </div>
   </div>
-  <div>
-      <h1>nächstes</h1>
-asdfhjlaösdfjklöasdjfklösdfjklöasdjfklöasdjfklöasdjfklöasdflö
 
-  </div>
+  <!-- Austattung -->
+  <div class="ausstattung"></div>
+    <h1 id="ausstattung">Ausstattung</h1>
+    <div class="zIndex">
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-sink"></i></div>
+        <h3>Küche</h3>
+        <div class="ausstattungstexte">
+            <div>Es gibt eine vollausgestattete Küche mit Herd, Geschirrspüler, Backofen, Wasserkocher und allem anderen, was dazugehört.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-bed"></i></div>
+        <h3>Schlafen</h3>
+        <div class="ausstattungstexte">
+            <div>Auf euch warten ein Doppelstockbett in einem separaten Raum und ein Doppelbett in der unteren Ebene.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-shower"></i></div>
+        <h3>Bad</h3>
+        <div class="ausstattungstexte">
+            <div>Im Bad gibt es eine Dusche und natürlich Fön und Kosmetikspiegel. Handtücher bitte selbst mitbringen.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-umbrella-beach"></i></div>
+        <h3>Draußen</h3>
+        <div class="ausstattungstexte">
+            <div>Auf der Terrasse könnt ihr mit Blick auf den Bodden entspannen. Hier stehen Gartenmöbel zur Verfügung. Außerdem steht auf dem Gelände eine Sauna für euch bereit.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-border-none"></i></div>
+        <h3>Größe</h3>
+        <div class="ausstattungstexte">
+            <div>Das Tinyhaus hat 42qm, denn weniger ist mehr. Es ist voll durchdacht, sodass euch trotzdem nichts fehlt. Es gibt einen Wohnessbereich, ein Bad und zwei Schlafzimmer.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-parking"></i></div>
+        <h3>Parken</h3>
+        <div class="ausstattungstexte">
+            <div>Direkt neben dem Haus könnt ihr kostenlos euer Auto abstellen. Eure Gäste können kostenpflichtig auf dem Strandparkplatz parken.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-memory"></i></i></div>
+        <h3>Technik</h3>
+        <div class="ausstattungstexte">
+            <div>Im Wohnzimmer hängt ein Flat-Screen und im Tinyhaus seid ihr mit W-Lan versorgt.</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+     <!---Preise-->
+
+     <h1 id="preise">Preise</h1>
+     <div class="accordion" id="accordionExample"> 
+        <p>Die Preise gelten pro Nacht bei einer Belegung von bis zu 4 Personen zuzüglich 70€ Endreinigung. Wer weniger als 5 Nächte strandet, zahlt 10€/ Nacht dazu (November bis März 30€ extra/ Nacht).</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Hauptsaison
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h3>75€</h3>
+                <ul>
+                    <li>08.01. - 02.04.2022</li>
+                    <li>23.04. - 14.05.2022</li>
+                    <li>05.11. - 17.12.2022</li>
+                </ul>            
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Nebensaison
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h3>75€</h3>
+                <ul>
+                    <li>08.01. - 02.04.2022</li>
+                    <li>23.04. - 14.05.2022</li>
+                    <li>05.11. - 17.12.2022</li>
+                </ul>            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Zwischensaison
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <p>75€</p>
+                <ul>
+                    <li>08.01. - 02.04.2022</li>
+                    <li>23.04. - 14.05.2022</li>
+                    <li>05.11. - 17.12.2022</li>
+                </ul>            </div>
+          </div>
+        </div>
+
+<!---Kalender-->
+<h1 id="kalender">Kalender</h1>
+<div class="calendar">
+    <h3 id="linus">gelbes Haus</h3>
+    <div class="linus">
+        <div id="smoobuCalendarIframe">  <link rel="stylesheet" type="text/css" href="https://login.smoobu.com/css/singleCalendarWidgetIframe.css">  <iframe class="smallDevices" height="540px" width="280px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe>  <iframe class="bigDevices" height="600px" width="1000px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe></div>    <h3 id="nora">blaues Haus</h3>
+    <div class="nora">
+        <div id="smoobuCalendarIframe">  <link rel="stylesheet" type="text/css" href="https://login.smoobu.com/css/singleCalendarWidgetIframe.css">  <iframe class="smallDevices" height="540px" width="280px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe>  <iframe class="bigDevices" height="600px" width="1000px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe></div>    <h3 id="eva">rotes Haus</h3>
+    <div class="eva">
+        <div id="smoobuCalendarIframe">  <link rel="stylesheet" type="text/css" href="https://login.smoobu.com/css/singleCalendarWidgetIframe.css">  <iframe class="smallDevices" height="540px" width="280px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe>  <iframe class="bigDevices" height="600px" width="1000px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe></div></div>
+
+        <!---Umgebung-->
+<h1 id="umgebung">Umgebung</h1>
+
+<!---Kontakt-->
+<div class="kontakt1">
+    <h1 id="kontakt">Kontakt</h1>
+    <p>Nehmt gern Kontakt mit uns auf, wir freuen uns auf Eure Anfrage!</p> 
+    <div class="kontakt2">
+    <a href="mailto:m.m.m@gmx.de"><br>Schreibe eine Mail</a>
+   </div>
+</div>
+<!--Impressum-->
+
+<h1 id="impressumfooter">Impressum</h1>
+<h3>Angaben gemäß § 5 TMG</h3>
+
+<p>Antonia und Stefan Müller
+Hafenstr. 16
+12345 Lubmin</p>
+
+<h3>Kontakt</h3>
+<p>Telefon: +49 (0) 178 5287637 <br>
+   E-Mail: info@tinyhouses-lubmin.de</p>
+
+<h3>Haftung für Inhalte</h3>
+<p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+
+   Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+   </p>
+<h3>Haftung für Links</h3>
+<p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+
+   Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+   </p>
+<h3>Urheberrecht</h3>
+<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+
+   Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+   
+   Quelle: <link href="www.e-recht24.de">e-recht24.de</link></p>
+
+
+   
+<!---Footer-->
+<div class="footer">
+    <table>    
+        <thead>
+    <tr>
+        <th class="footer1"><a class="footer2" href="#impressumfooter">Impressum</a> </th>
+        <th class="footer1"><a class="footer2" href="#kontakt">Kontakt</a> </th>
+    </tr>
+        </thead>
+    </table>
+    <p class="herz">made with &#9825 in Berlin</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+   </body>
+</html>
+
 
     <!-- JavaScript -->
-   
+    <script src="main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
   </body>
 </html>
+
+
