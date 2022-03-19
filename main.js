@@ -3,15 +3,6 @@ function navigationUmschalten(){
     const navigationsleiste = document.getElementById("navbar");
     navigationsleiste.classList.toggle("navGeoeffnet");
 };
-//Bewegung Navigationselemente bei Mouseover
-let liMenu = document.querySelector("#liMenu");
-
-liMenu.addEventListener("mouseover", mouseOverMenu);
-
-function mouseOverMenu () {
-    
-    //bewegung des Divs während sich die Maus bewegt
-}
 
 //Drehwurm
 window.onscroll = function () {
