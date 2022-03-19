@@ -60,7 +60,6 @@
        display: block;
        height: 100%;
        text-align: center;
-       font-size: 1.6rem;
        font-weight: 900;
        padding: 10px;
    }
@@ -68,13 +67,14 @@
        text-decoration: none;
        color: white;
        transition: font-size .4s;
-       font-size: x-large;
+       font-size: 2em;
    }
    .navGeoeffnet li a:hover {
     width: 100%;
     transition: font-size .4s;
-    font-size: larger;
+    font-size: 3em;
    }
+
 
 /* Start */
     .start {
@@ -83,7 +83,7 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: center left;
         height: 100vh;
         margin: none;    
         min-height: 500px; 
@@ -136,10 +136,10 @@
           font-family: 'Dosis', sans-serif;
           font-size: 1em;
           display: inline-block;
-          padding: 10px;
+          padding: 5px;
        }
        .icons i {
-           padding: 10px;
+           padding: 8px;
            font-size: 1em;
        }
    }
@@ -333,7 +333,11 @@
                          rotate(9.42rad);-ms-transform: rotate(9.42rad); transform: rotate(9.42rad);
                          width: 11px; height: 25px; left: 289.09px; top: 344.99px;}
                         
-
+/* Galerie */
+.carousel-item > img {
+    height: 90vh;
+    object-fit: cover;
+}
 
 /* Ausstattung */
 .ausstattung {
@@ -375,6 +379,7 @@
      display: inline-block;
  }
 
+ /* Preise */
 /* Accordion */
 @media (min-width: 799px) {
 .accordion {
@@ -386,6 +391,15 @@
 .accordion > p {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+}
+.accordion-body {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.accordion-body > div > ul > li {
+    list-style-type:none;
 }
 #preise {
     background-image: url(pics/boddenblickTreppe.jpeg);
@@ -401,47 +415,39 @@
     margin: none;  
 }
 .accordion-button {
-    font-size: inherit;
     color: rgb(76, 112, 121);
 }
 
 .accordion-button:not(.collapsed) {
-    color: inherit;
     background:rgba(231, 230, 230, 0.692);
     color: rgb(76, 112, 121);
-}
-
-.accordion-button:focus {
-    box-shadow: inherit;
 }
 
 
 /*Kalender*/
 .calendar {
     text-align: center;
-       /* Hintergrundbild "steht"*/
-   text-align:center;
+    background-image: url(pics/sonnenuntergang.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0 0 1px;
 }
-
-     #linus {
-         font-size: 30px;
-         padding: 40px;
-     }  
-     #nora {
-         font-size: 30px;
-         padding: 40px;
-     }
-     #eva {
-         font-size: 30px;
-         padding: 40px;
-     }
-
+@media (min-width: 799px) {
+    .calendar {
+        padding-left: 240px;
+        padding-right: 70px;
+        padding-bottom: 80px;
+    }
+}
 /*Kontakt*/
 .kontakt1 p {
     text-align: center;
     font-size: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
+
 .kontakt2 a:link {
      text-decoration: none;
      display: inline-block;
@@ -458,11 +464,12 @@
  .kontakt2 {
      background-image: url(pics/kontakt.jpg);
      background-attachment: fixed;
+     width: 100vw;
      background-repeat: no-repeat;
      background-size: cover;
      margin: none;    
      background-position:center;
-     height: 19em;
+     height: 23em;
  }
 .kontakt2 > a {
     color: whitesmoke;
@@ -470,30 +477,47 @@
     font-family: Dosis, sans-serif;
     font-weight: 500;
     font-size: 40px;
-    margin-top: 10vh;
+    margin-top: 20vh;
     margin-right: 10vw;
     float: right;
+}
+/* Impressum */
+@media (min-width: 799px) {
+    .impressum {
+        padding-left: 240px;
+        padding-right: 70px;
+        padding-bottom: 80px;
+    }
 }
  /* Footer */
  .footer {
      display: block;
+     width: 100vw;
      height: 66px;
      background-color: rgb(235, 233, 233);
-
+ }
+ .footer > table {
+     width: 100%;
  }
  .footer1 {
      padding-top: 25px;
+     padding-left: 25px;
  }
  a.footer2:link {
      text-decoration: none;
      padding-bottom: 6px;
      color:rgb(39, 11, 33);
  }
+ a.footer2:visited {
+    text-decoration: none;
+    color:rgb(39, 11, 33);
+} 
  a.footer2:hover {
      text-decoration: none;
      border-bottom: solid 1px #484747;
      color:rgb(39, 11, 33);
- }   
+ }
+  
  .herz {
      padding: 2em;
      text-align: center;
