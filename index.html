@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+     <!--Drehwurm-->
+     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Dosis:300:latin'>
+
+
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Licorice&display=swap" rel="stylesheet">
+     <!-- 
+    font-family: 'Dosis', sans-serif; 
+    font-family: 'Licorice', cursive;-->
+
+     <!--Icons-->
+     <script src="https://kit.fontawesome.com/fec2e51610.js" crossorigin="anonymous"></script>
+
+    <title>Tinyhouses</title>
+  </head>
+  <body>
+    <!-- Drehwurm -->
+    <!-- Textform: source: Dirk Weber: https://csswarp.eleqtriq.com/ -->
+    <div class="drehwurm">
+        <div id='warped'>
+               <span class='w0'>T</span><span class='w1'>I</span><span class='w2'>N</span><span class='w3'>Y</span><span class='w4'>H</span><span class='w5'>Ä</span><span class='w6'>U</span><span class='w7'>S</span><span class='w8'>E</span><span class='w9'>R</span><span class='w10'> </span><span class='w11'>·</span><span class='w12'> </span><span class='w13'>I</span><span class='w14'>N</span><span class='w15'> </span><span class='w16'>·</span><span class='w17'> </span><span class='w18'>L</span><span class='w19'>U</span><span class='w20'>B</span><span class='w21'>M</span><span class='w22'>I</span><span class='w23'>N</span><span class='w24'> </span><span class='w25'>·</span>
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <div class="nav" id="navbar">
+        <ul class="nav1">
+            <li id="liMenu"><a href="#home" onclick="navigationUmschalten()" alt="Tinyhouse Lubmin Home">Home</a></li>
+            <li id="liGalerie"><a href="#galerie" onclick="navigationUmschalten()" alt="Tinyhouse Lubmin Fotos">Galerie</a></li>
+            <li><a href="#ausstattung" onclick="navigationUmschalten()" alt="Tinyhaus Lubmin Ausstattung">Ausstattung</a></li>
+            <li><a href="#preise" onclick="navigationUmschalten()" alt="Tinyhaus Lubmin Preise">Preise</a></li>
+            <li><a href="#kalender" onclick="navigationUmschalten()" alt="Tinyhaus Lubmin Kalender">Kalender</a></li>
+            <li><a href="#umgebung" onclick="navigationUmschalten()" alt="Tinyhouses Lubmin Umgebung">Umgebung</a></li>
+            <li><a href="#kontakt" onclick="navigationUmschalten()" alt="Tinyhaeuser Lubmin Kontakt">Kontakt</a></li>
+        </ul>
+    </div>
+    <a href="javascript:void(0);" class="hamburgerIcon" onclick="navigationUmschalten()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </a>        
+    
+
+    <!-- Start-->
+    <div id="home" class="start">
+        <a href="#menu" alt="Tinyhaus Lubmin Start"><h1>TINYHÄUSER</h1>
+        <h2>Ferienvermietung in Lubmin</h2></a>
+        <div class="icons">
+            <div><i class="fas fa-user-plus"></i><div>Bis zu vier Personen</div></div>
+            <div><i class="fas fa-bed"></i><div>2 Schlafzimmer</div></div>
+            <div><i class="fas fa-water"></i><div>Seeblick</div></div>
+        </div>
+    </div>
+    
+<!--Bilder-Carousel-->
+<div class="bilder-carousel">
+<h1 id="galerie">Galerie</h1>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false" data-bs-intervall="false">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1868.jpeg" class="d-block w-100" alt="Tinyhouse Lubmin Bad">
+      </div>      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1828.jpeg" class="d-block w-100" alt="TinyhouseLubmin Bad">
+      </div>      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1820.jpeg" class="d-block w-100" alt="...">
+      </div>      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_5012.JPG" class="d-block w-100" alt="...">
+      </div>      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1821.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1808.jpeg" class="d-block w-100 mh-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1809.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1811.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1814.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1815.jpeg" class="d-block w-100 mh-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1817.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pics/Bilder Tinyhouse 1/IMG_1818.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+
+  <!-- Austattung -->
+  <div class="ausstattung"></div>
+    <h1 id="ausstattung">Ausstattung</h1>
+    <div class="zIndex">
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-sink"></i></div>
+        <h3>Küche</h3>
+        <div class="ausstattungstexte">
+            <div>Es gibt eine vollausgestattete Küche mit Herd, Geschirrspüler, Backofen, Wasserkocher und allem anderen, was dazugehört.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-bed"></i></div>
+        <h3>Schlafen</h3>
+        <div class="ausstattungstexte">
+            <div>Auf euch warten zwei Betten (160x200) in obenliegenden Schlafkojen. Die eine Koje ist zum Wohnzimmer durch eine Tür getrennt, sodass im Wohnzimmer noch gesessen werden kann, während die Kinder schon schlafen.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-shower"></i></div>
+        <h3>Bad</h3>
+        <div class="ausstattungstexte">
+            <div>Im Bad gibt es eine Dusche und natürlich Fön und Kosmetikspiegel. Handtücher bitte selbst mitbringen.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-umbrella-beach"></i></div>
+        <h3>Draußen</h3>
+        <div class="ausstattungstexte">
+            <div>Auf der Terrasse könnt ihr mit Blick auf den Bodden entspannen. Hier stehen Gartenmöbel zur Verfügung. Außerdem steht auf dem Gelände eine Sauna für euch bereit.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-border-none"></i></div>
+        <h3>Größe</h3>
+        <div class="ausstattungstexte">
+            <div>Das Tinyhaus hat 22qm, denn weniger ist mehr. Es ist voll durchdacht, sodass euch trotzdem nichts fehlt. Es gibt einen Wohnbereich, ein Bad, eine abgeschlossene, und eine zum Wohnraum offene, Schlafkoje.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-parking"></i></div>
+        <h3>Parken</h3>
+        <div class="ausstattungstexte">
+            <div>Direkt neben dem Haus könnt ihr kostenlos euer Auto abstellen. Eure Gäste können kostenpflichtig auf dem Strandparkplatz parken.</div>
+        </div>
+    </div>
+    <div class="ausstattungskasten">
+        <div class="ausstattungsicon"><i class="fas fa-memory"></i></i></div>
+        <h3>Technik</h3>
+        <div class="ausstattungstexte">
+            <div>Im Wohnzimmer hängt ein Flat-Screen und im Tinyhaus seid ihr mit W-Lan versorgt.</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+     <!---Preise-->
+
+     <h1 id="preise">Preise</h1>
+     <div class="accordion" id="accordionExample"> 
+        <p>Die Preise gelten pro Nacht bei einer Belegung von bis zu 4 Personen zuzüglich 70€ Endreinigung. Wer weniger als 5 Nächte strandet, zahlt 10€/ Nacht dazu (November bis März 30€ extra/ Nacht).</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Hauptsaison
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <ul>
+                    <li>08.01. - 02.04.2022</li>
+                    <li>23.04. - 14.05.2022</li>
+                    <li>05.11. - 17.12.2022</li>
+                </ul>  
+              </div> 
+              <div>      
+                <h3>75€</h3>   
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Nebensaison
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <ul>
+                    <li>08.01. - 02.04.2022</li>
+                    <li>23.04. - 14.05.2022</li>
+                    <li>05.11. - 17.12.2022</li>
+                </ul>  
+              </div> 
+              <div>      
+                <h3>75€</h3>   
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Zwischensaison
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <ul>
+                    <li>08.01. - 02.04.2022</li>
+                    <li>23.04. - 14.05.2022</li>
+                    <li>05.11. - 17.12.2022</li>
+                </ul>  
+              </div> 
+              <div>      
+                <h3>75€</h3>   
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!---Kalender-->
+
+<div class="calendar">
+  <h1 id="kalender">Kalender</h1>
+    <h3 id="gelb">gelbes Haus</h3>
+    <div id="smoobuCalendarIframe">  <link rel="stylesheet" type="text/css" href="https://login.smoobu.com/css/singleCalendarWidgetIframe.css">  <iframe class="smallDevices" height="540px" width="280px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe>  <iframe class="bigDevices" height="600px" width="1000px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe></div>
+    <h3 id="rot">rotes Haus</h3>
+    <div id="smoobuCalendarIframe">  <link rel="stylesheet" type="text/css" href="https://login.smoobu.com/css/singleCalendarWidgetIframe.css">  <iframe class="smallDevices" height="540px" width="280px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053625/a547d3d9e77e8ff98aa4d2076ad664ee76ec985bda745d3fe1f8cd764b8f3133"></iframe>  <iframe class="bigDevices" height="600px" width="1000px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053625/a547d3d9e77e8ff98aa4d2076ad664ee76ec985bda745d3fe1f8cd764b8f3133"></iframe></div>
+    <h3 id="blau">blaues Haus</h3>
+    <div id="smoobuCalendarIframe">  <link rel="stylesheet" type="text/css" href="https://login.smoobu.com/css/singleCalendarWidgetIframe.css">  <iframe class="smallDevices" height="540px" width="280px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe>  <iframe class="bigDevices" height="600px" width="1000px" src="https://login.smoobu.com/de/cockpit/widget/show-calendar-iframe/1053628/b9a2d85c672e8c1f0fd39f964d3a6a9b849ba7ad859ff78f7d662f087633c901"></iframe></div></div>
+
+        <!---Umgebung-->
+<h1 id="umgebung">Umgebung</h1>
+
+<p>vielleicht Fotos mit link nach Greifswald/Lubmin/Tierpark Wolgast... oder reiten in Lubmin... ?</p>
+
+<!---Kontakt-->
+<div class="kontakt1">
+    <h1 id="kontakt">Kontakt</h1>
+    <p>Nehmt gern Kontakt mit uns auf, wir freuen uns auf Eure Anfrage!</p> 
+    <div class="kontakt2">
+    <a href="mailto:kimumueller@gmx.de"><br>Eine Mail schreiben</a>
+   </div>
+</div>
+<!--Impressum-->
+
+<!-- siehe weitere Datei -->
+
+   
+<!---Footer-->
+<div class="footer">
+    <table>    
+        <thead>
+    <tr>
+        <th class="footer1"><a class="footer2" href="impressum.html">Impressum</a> </th>
+        <th class="footer1"><a class="footer2" href="#kontakt">Kontakt</a> </th>
+        <th class="footer1"><a class="footer2" href="#umgebung">Umgebung</a> </th>
+        <th class="footer1"><a class="footer2" href="#kalender">Kalender</a> </th>
+        <th class="footer1"><a class="footer2" href="#kpreise">Preise</a> </th>
+        <th class="footer1"><a class="footer2" href="#galerie">Galerie</a> </th>
+        <th class="footer1"><a class="footer2" href="#start">Start</a> </th>
+    </tr>
+        </thead>
+    </table>
+    <p class="herz">made with &#9825</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+   </body>
+</html>
+
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
