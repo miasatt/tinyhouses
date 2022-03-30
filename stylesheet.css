@@ -77,52 +77,49 @@
 
 
 /* Start */
+   
     .start {
         /*parallax*/
-        background-image: url(pics/tinyhouseDaemmerung.jpeg);
+        background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center left;
+        background-position: center;
         height: 100vh;
         margin: none;    
         min-height: 500px; 
       }
-    .start h1 {
-        padding-top: 55vh;
-        padding-bottom: 10px;
+      .start h1 {
         font-size: 3em;
         color: white;
+        padding: 0;
     }
     .start h2 {
         text-align: center;
         letter-spacing: 1px;
         color: white;
+        font-size: 1em;
     }
-   @media (min-width: 800px) {
+    .kreis {
+        background: rgba(29, 29, 121, 0.801);
+        border-radius: 50%;
+        text-align: center;
+        height: 450px;
+        width: 450px;
+        position: absolute;
+        top: 8em;
+        right: 10px;
+        padding: 10px;
+        margin-top: -30px;
+        margin-right: -40px;
+        margin-bottom: 0px;
+        display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+    
        .icons {
-           background-color: rgb(194, 192, 192);
-           width: 100%;
-           position: absolute;
-           bottom: 0;
-           padding-top: 1.3em;
-           padding-right: 1.5em;
-           padding-bottom: 1.3em;
-           text-align: right;
-           opacity: 0.8;
-       }
-       .icons div {
-          font-family: 'Dosis', sans-serif;
-          display: inline-block;
-          padding: 10px;
-       }
-       .icons > div > i {
-           font-size: 1.7em;
-       }
-   }
-   @media (max-width: 799px) {
-       .icons {
-           background-color: rgb(194, 192, 192);
+           background-color: rgba(194, 192, 192, 0.815);
            width: 100%;
            position: absolute;
            bottom: 0;
@@ -130,7 +127,7 @@
            padding-right: 1.5em;
            padding-bottom: 1.3em;
            text-align: center;
-           opacity: 0.8;
+
        }
        .icons div {
           font-family: 'Dosis', sans-serif;
@@ -142,7 +139,21 @@
            padding: 8px;
            font-size: 1em;
        }
-   }
+
+/*Erklärtext*/
+.erklaertext {
+    color: grey;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.507);
+    font-size: large;
+    padding: 20px;
+    padding-left: 240px;
+    font-family: "dosis", sans-serif;
+    padding-top: 12vh;
+}
+
 
 /*Drehwurm*/
 @media (min-width: 799px) {
@@ -440,6 +451,13 @@
         padding-right: 70px;
         padding-bottom: 80px;
     }
+}
+
+/*Umgebung*/
+.umgebung {
+    padding: 20px;
+    padding-left: 240px;
+    font-size: large;
 }
 /*Kontakt*/
 .kontakt1 p {
