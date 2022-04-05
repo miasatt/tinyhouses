@@ -42,6 +42,10 @@
         user-select: none;
         z-index: 5;
     }
+    .hamburgerIcon a:hover {
+        color: black;
+
+    }
     .navGeoeffnet {
        display: block;
        width: 100%;
@@ -141,6 +145,7 @@
        }
 
 /*Erklärtext*/
+@media (min-width: 799px) {
 .erklaertext {
     color: grey;
     text-align: center;
@@ -152,7 +157,19 @@
     padding-left: 240px;
     font-family: "dosis", sans-serif;
     padding-top: 12vh;
-}
+}}
+@media (min-width: 799px) {
+.erklaertext {
+    color: grey;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.507);
+    font-size: large;
+    padding: 20px;
+    font-family: "dosis", sans-serif;
+    padding-top: 12vh;
+}}
 
 
 /*Drehwurm*/
