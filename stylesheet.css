@@ -495,11 +495,20 @@
 }
 
 /*Umgebung*/
+@media (min-width: 800px) {
 .umgebung {
     padding: 20px;
     padding-left: 240px;
     font-size: large;
+    }
 }
+@media (max-width: 800px) {
+    .umgebung {
+        padding: 20px;
+        font-size: large;
+    }
+}
+
 /*Kontakt*/
 .kontakt1 p {
     text-align: center;
