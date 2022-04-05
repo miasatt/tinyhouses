@@ -502,10 +502,10 @@
     font-size: large;
     }
 }
-@media (max-width: 800px) {
-    .umgebung {
-        padding: 20px;
-        font-size: large;
+@media (max-width: 799px) {
+.umgebung {
+    padding: 20px;
+    font-size: large;
     }
 }
 
