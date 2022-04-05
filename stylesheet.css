@@ -411,24 +411,32 @@
 /* Accordion */
 @media (min-width: 799px) {
 .accordion {
-    padding-left: 240px;
-    padding-right: 70px;
+    padding-right: 20px;
+    padding-left: 120px;
     padding-bottom: 80px;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
 }
 }
+@media (max-width: 800px) {
+.accordion {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+}
+
 .accordion > p {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-}
-.accordion-body {
-    display: flex;
-    justify-content: space-around;
-
-
+    padding-left: 120px;
+    padding-right: 20px;
+    margin: auto;
+    
 }
 .accordion-body > div > ul > li {
     list-style-type:none;
 }
+
 #preise {
     background-image: url(pics/boddenblickTreppe.jpeg);
     padding-top: 80vh;
