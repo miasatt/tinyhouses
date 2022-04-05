@@ -417,11 +417,25 @@
     font-family: "Dosis", sans-serif;
     text-align: center;
 }
+.accordion > p {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 120px;
+    padding-right: 20px;
+    margin: auto;
+}
 }
 @media (max-width: 800px) {
 .accordion {
     font-family: "Dosis", sans-serif;
     text-align: center;
+    padding: 20px;
+}
+.accordion > p {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding: 20px;
+    margin: auto;
 }
 }
 @media (max-width: 600px) {
@@ -429,13 +443,12 @@
     font-family: "Dosis", sans-serif;
     text-align: center;
 }
-
 .accordion > p {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    padding-left: 120px;
-    padding-right: 20px;
+    padding: 8px;
     margin: auto;
+}
 }
 .accordion-body > div > ul > li {
     list-style-type:none;
