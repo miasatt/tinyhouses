@@ -158,7 +158,7 @@
     font-family: "dosis", sans-serif;
     padding-top: 12vh;
 }}
-@media (min-width: 799px) {
+@media (max-width: 799px) {
 .erklaertext {
     color: grey;
     text-align: center;
