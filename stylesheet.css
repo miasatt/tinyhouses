@@ -466,6 +466,7 @@
     height: 100vh;
     margin: none;  
 }
+}
 @media (max-width: 600px) {
     #preise {
         background-image: url(pics/boddenblickTreppe.jpeg);
