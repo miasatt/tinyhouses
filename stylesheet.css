@@ -98,13 +98,8 @@
     .start{
         /*parallax*/
         background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         height: 100vh;
-        margin: none;    
-        min-height: 500px; 
+        margin: none;
         }
     }
       .start h1 {
