@@ -84,7 +84,7 @@
    
     .start {
         /*parallax*/
-        background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
+        background-image: url(pics/tinyhouseDaemmerung.jpeg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -452,7 +452,7 @@
 .accordion-body > div > ul > li {
     list-style-type:none;
 }
-
+@media (min-width: 600px) {
 #preise {
     background-image: url(pics/boddenblickTreppe.jpeg);
     padding-top: 80vh;
@@ -465,6 +465,16 @@
     background-position: center center;
     height: 100vh;
     margin: none;  
+}
+@media (max-width: 600px) {
+    #preise {
+        background-image: url(pics/boddenblickTreppe.jpeg);
+        padding-top: 80vh;
+        color: white;
+        text-shadow:0 0 4px rgb(102, 100, 100);
+        height: 100vh;
+        margin: none;  
+    }
 }
 .accordion-button {
     color: rgb(76, 112, 121);
