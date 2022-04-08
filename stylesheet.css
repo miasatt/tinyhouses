@@ -81,7 +81,7 @@
 
 
 /* Start */
-   
+@media (min-width: 599px) {
     .start {
         /*parallax*/
         background-image: url(pics/tinyhouseDaemmerung.jpeg);
@@ -93,6 +93,20 @@
         margin: none;    
         min-height: 500px; 
       }
+    }
+    @media (max-width: 600px) {
+    .start{
+        /*parallax*/
+        background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: none;    
+        min-height: 500px; 
+        }
+    }
       .start h1 {
         font-size: 3em;
         color: white;
@@ -104,6 +118,7 @@
         color: white;
         font-size: 1em;
     }
+    @media (min-width: 600px) {
     .kreis {
         background: rgba(29, 29, 121, 0.801);
         border-radius: 50%;
@@ -121,7 +136,7 @@
   align-items: center;
   justify-content: center;
     }
-    
+}
        .icons {
            background-color: rgba(194, 192, 192, 0.815);
            width: 100%;
@@ -488,15 +503,28 @@
 
 
 /*Kalender*/
+@media (min-width: 600px) {
 .calendar {
     text-align: center;
-    background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
+    background-image: url(pics/tinyhouseDaemmerung.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     text-shadow: 0 0 1px;
+    }
 }
+@media (max-width: 599px) {
+    .calendar {
+        text-align: center;
+        background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        text-shadow: 0 0 1px;
+        }
+    }
 @media (min-width: 799px) {
     .calendar {
         padding-left: 240px;
