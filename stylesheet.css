@@ -565,8 +565,9 @@
      text-decoration: none;
      color: white;
  }
+ @media (min-width: 599px) {
  .kontakt2 {
-     background-image: url(pics/kontaktklein.jpg);
+     background-image: url(pics/kontakt.jpg);
      background-attachment: fixed;
      width: 100vw;
      background-repeat: no-repeat;
@@ -575,6 +576,19 @@
      background-position:center;
      height: 23em;
  }
+}
+@media (max-width: 600px) {
+    .kontakt2 {
+        background-image: url(pics/kontaktklein.jpg);
+        background-attachment: fixed;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: none;    
+        background-position:center;
+        height: 23em;
+    }
+   }
 .kontakt2 > a {
     color: whitesmoke;
     text-shadow: o o 1px;
