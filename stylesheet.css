@@ -511,7 +511,7 @@
 @media (max-width: 599px) {
     .calendar {
         text-align: center;
-        background-image: url(pics/boddenAnsicht.jpg);
+        background-image: url(pics/boddenAnsichtklein.jpg);
         text-shadow: 0 0 1px;
         }
     }
