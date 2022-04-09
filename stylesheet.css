@@ -96,7 +96,6 @@
     }
     @media (max-width: 600px) {
     .start{
-        /*parallax*/
         background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
         height: 100vh;
         margin: none;
@@ -501,7 +500,7 @@
 @media (min-width: 600px) {
 .calendar {
     text-align: center;
-    background-image: url(pics/tinyhouseDaemmerung.jpeg);
+    background-image: url(pics/boddenAnsicht.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -512,11 +511,7 @@
 @media (max-width: 599px) {
     .calendar {
         text-align: center;
-        background-image: url(pics/tinyhouseDaemmerungKlein.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        background-image: url(pics/boddenAnsicht.jpg);
         text-shadow: 0 0 1px;
         }
     }
@@ -525,6 +520,13 @@
         padding-left: 240px;
         padding-right: 70px;
         padding-bottom: 80px;
+        text-align: center;
+    background-image: url(pics/boddenAnsicht.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0 0 1px;
     }
 }
 
