@@ -463,7 +463,7 @@
 }
 @media (min-width: 600px) {
 #preise {
-    background-image: url(pics/boddenblickTreppe.jpeg);
+    background-image: url(pics/IMG_1817.jpeg);
     padding-top: 80vh;
     color: white;
     text-shadow:0 0 4px rgb(102, 100, 100);
@@ -478,7 +478,7 @@
 }
 @media (max-width: 600px) {
     #preise {
-        background-image: url(pics/boddenblickTreppe.jpeg);
+        background-image: url(pics/IMG_1817.jpeg);
         padding-top: 80vh;
         color: white;
         text-shadow:0 0 4px rgb(102, 100, 100);
