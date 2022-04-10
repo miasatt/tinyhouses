@@ -483,6 +483,10 @@
         color: white;
         text-shadow:0 0 4px rgb(102, 100, 100);
         height: 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
         margin: none;  
     }
 }
@@ -565,7 +569,7 @@
      text-decoration: none;
      color: white;
  }
- @media (min-width: 599px) {
+ @media (min-width: 600px) {
  .kontakt2 {
      background-image: url(pics/kontakt.jpg);
      background-attachment: fixed;
@@ -577,15 +581,12 @@
      height: 23em;
  }
 }
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .kontakt2 {
         background-image: url(pics/kontaktklein.jpg);
-        background-attachment: fixed;
         width: 100vw;
-        background-repeat: no-repeat;
         background-size: cover;
         margin: none;    
-        background-position:center;
         height: 23em;
     }
    }
