@@ -476,7 +476,7 @@
     margin: none;  
 }
 }
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     #preise {
         background-image: url(pics/IMG_1817klein.jpg);
         padding-top: 80vh;
@@ -486,7 +486,6 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center right;
-        background-size: cover;
         margin: none;  
     }
 }
@@ -517,6 +516,10 @@
         text-align: center;
         background-image: url(pics/boddenAnsichtklein.jpg);
         text-shadow: 0 0 1px;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center right;
+        margin: none; 
         }
     }
 @media (min-width: 799px) {
@@ -585,7 +588,6 @@
     .kontakt2 {
         background-image: url(pics/kontaktklein.jpg);
         width: 100vw;
-        background-size: cover;
         margin: none;    
         height: 23em;
     }
