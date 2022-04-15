@@ -485,6 +485,8 @@
         height: 100vh;
         background-position: center right;
         margin: none;  
+        background-repeat: no-repeat;
+
     }
 }
 .accordion-button {
@@ -498,10 +500,18 @@
 
 
 /*Kalender*/
-@media (min-width: 600px) {
+#kalender {
+    color: white;
+    text-shadow:0 0 4px rgb(102, 100, 100);
+}
+.calendar h3{
+    color: white;
+    text-shadow:0 0 4px rgb(102, 100, 100);
+}
+@media (max-width: 798px) {
 .calendar {
     text-align: center;
-    background-image: url(pics/boddenAnsicht.jpg);
+    background-image: url(pics/IMG_5022.JPG);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -509,22 +519,14 @@
     text-shadow: 0 0 1px;
     }
 }
-@media (max-width: 599px) {
-    .calendar {
-        text-align: center;
-        background-image: url(pics/boddenAnsichtklein.jpg);
-        text-shadow: 0 0 1px;
-        height: 100vh;
-        margin: none; 
-        }
-    }
+
 @media (min-width: 799px) {
     .calendar {
         padding-left: 240px;
         padding-right: 70px;
         padding-bottom: 80px;
         text-align: center;
-    background-image: url(pics/boddenAnsicht.jpg);
+    background-image: url(pics//IMG_5022.JPG);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -615,6 +617,7 @@
  }
  .footer > table {
      width: 100%;
+     display: table-row;
  }
  .footer1 {
      padding-top: 25px;
