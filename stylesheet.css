@@ -541,12 +541,14 @@
     padding: 20px;
     padding-left: 240px;
     font-size: large;
+    background: white;
     }
 }
 @media (max-width: 799px) {
 .umgebung {
     padding: 20px;
     font-size: large;
+    background: white;
     }
 }
 
