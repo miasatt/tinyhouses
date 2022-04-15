@@ -53,7 +53,7 @@
        position: fixed;
        z-index: 4;
        padding-top: 2.8em;
-       background-color: rgb(194, 192, 192);
+       background-color: rgba(194, 192, 192, 0.863);
        animation:schieber .7s;
     }
     @keyframes schieber{
@@ -541,14 +541,12 @@
     padding: 20px;
     padding-left: 240px;
     font-size: large;
-    background: white;
     }
 }
 @media (max-width: 799px) {
 .umgebung {
     padding: 20px;
     font-size: large;
-    background: white;
     }
 }
 
